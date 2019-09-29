@@ -6,6 +6,8 @@
 
 [Основной файл эксперимента](https://github.com/MartinsonMichael/VK_Lab_intro/blob/master/nn_model_simple_rnn.ipynb)
 
+[Код предобработки](https://github.com/MartinsonMichael/VK_Lab_intro/blob/master/view.ipynb)
+
 [Отчет PDF](https://github.com/MartinsonMichael/VK_Lab_intro/blob/master/tex_report/MartinsonMichael_VKLab_Raport.pdf)
 
 ## Инструкция
