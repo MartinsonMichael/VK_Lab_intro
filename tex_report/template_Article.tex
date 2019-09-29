@@ -1,0 +1,106 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage[english,russian]{babel} 
+\usepackage{graphicx}
+\usepackage[left=2cm,right=1cm,
+top=2cm,bottom=3cm,bindingoffset=0cm]{geometry} 
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{soul}
+\newtheorem{lemma}{Лемма}
+\newtheorem{definition}{Определение}
+\newtheorem{properties}{Свойства}
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{method}{Метод}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание}
+\newtheorem*{mem}{Напоминание}
+
+% \newcommand*\backmatter{%
+%  \setcounter{section}{0}%
+%  \renewcommand\section{back.\arabic{section}}}
+
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclareMathOperator\arctanh{arctanh}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\const}{const}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\suml}{\sum\limits}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\given[1][]{\:#1\vert\:}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\newcommand{\eps}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+
+\graphicspath{ {images/} }
+
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{799B03} % цвет ссылок
+\definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
+
+\hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+\title{Легковесный детектор для токсичного текстового контента}
+\author{Михаил Мартинсон}
+
+
+\begin{document}
+	\maketitle
+	
+	\label{firstpage}
+	
+	\subsection*{Задача}
+	
+	В этом задании требовалось обучить лекгий и быстрый классификатор для короткий текстов. Датасет состоит из кротких сообщений людей\href{https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/overview}{Kaggle}.
+	
+	\subsection*{Модель}
+	
+	Так как в задании есть бонусная часть про интропретируемость модели, вначале я решил 
+	
+%	\addcontentsline{toc}{section}{Список используемой литературы}
+%	
+%	%далее сам список используемой литературы
+%	\begin{thebibliography}{}
+%		\bibitem{word_embed_review} 
+%		\href{http://ad-publications.informatik.uni-freiburg.de/theses/Bachelor_Jon_Ezeiza_2017.pdf}{(en) A review of word
+%			embedding and document similarity algorithms applied to academic text.} (про Vector Space Mode, Deep Learning, Word embeddings,  review of word embedding algorithms (Word2Vec, GloVe, FastText, WordRank), review of document similarity measures (Baseline: VSM, Doc2Vec, Doc2VecC, Word Mover’s Distance, Skip-thoughts, Sent2Vec)), 90 листов.
+%		
+%		\bibitem{review_exp_compare_text_cluster} 
+%		\href{http://www.mathnet.ru/links/2a50b93bfe9152511e398d666cc65d1b/tisp214.pdf}{(ru) Обзор и экспериментальное сравнение методов кластеризации текстов.} Хороший материал для начальной навигации.
+%		
+%		\bibitem{HB1} 
+%		\href{https://habr.com/post/324686/}{(ru) Технологический стек классификации текстов на естественных языках.} Описаны сигнатурный и шаблонный классификаторы, склейка в мультикласс.
+%		
+%		\bibitem{Stacking}
+%		\href{http://www.machinelearning.ru/wiki/images/5/56/Guschin2015Stacking.pdf}{(ru) Методы ансамблирования обучающихся алгоритмов}
+%		
+%		
+%		
+%	\end{thebibliography}
+			
+		\end{document}
